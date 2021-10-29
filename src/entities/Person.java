@@ -31,13 +31,21 @@ public class Person {
 	public Person() {
 	}
 
-	public Person(Integer id, String name, Integer gender, String birthday, String registry, String registerDate,
-			String lastModificationDate, String address, String district, String city, String uf, String cep,
-			String nationality, String lastAccessDate, Integer situation, Boolean hasValidRole,
-			Boolean hasProvisoryRole, CurrentPhysicalLocation currentPhysicalLocation, String lastFeedbackPollDate,
-			String lastIndexPhoto) {
+
+
+
+
+	public Person(Integer id, String name, List<Document> documents, List<Email> emails, List<Phone> phones,
+			Integer gender, String birthday, String registry, String registerDate, String lastModificationDate,
+			String address, String district, String city, String uf, String cep, String nationality,
+			String lastAccessDate, Integer situation, Boolean hasValidRole, Boolean hasProvisoryRole,
+			CurrentPhysicalLocation currentPhysicalLocation, String lastFeedbackPollDate, String lastIndexPhoto) {
+		super();
 		this.id = id;
 		this.name = name;
+		this.documents = documents;
+		this.emails = emails;
+		this.phones = phones;
 		this.gender = gender;
 		this.birthday = birthday;
 		this.registry = registry;
@@ -58,9 +66,13 @@ public class Person {
 		this.lastIndexPhoto = lastIndexPhoto;
 	}
 
+
+
+
+
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", documents=" + documents + ", emails=" + emails + ", phones="
+		return "contents [id=" + id + ", name=" + name + ", documents=" + documents + ", emails=" + emails + ", phones="
 				+ phones + ", gender=" + gender + ", birthday=" + birthday + ", registry=" + registry
 				+ ", registerDate=" + registerDate + ", lastModificationDate=" + lastModificationDate + ", address="
 				+ address + ", district=" + district + ", city=" + city + ", uf=" + uf + ", cep=" + cep
@@ -69,6 +81,10 @@ public class Person {
 				+ ", currentPhysicalLocation=" + currentPhysicalLocation + ", lastFeedbackPollDate="
 				+ lastFeedbackPollDate + ", lastIndexPhoto=" + lastIndexPhoto + "]";
 	}
+
+
+
+
 
 	public Integer getId() {
 		return id;
@@ -253,5 +269,5 @@ public class Person {
 	public void setLastIndexPhoto(String lastIndexPhoto) {
 		this.lastIndexPhoto = lastIndexPhoto;
 	}
-
+	
 }

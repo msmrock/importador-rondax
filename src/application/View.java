@@ -20,7 +20,7 @@ public class View extends Application {
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("logoSAM.png")));
 			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
-			primaryStage.setResizable(true);
+			primaryStage.setResizable(false);
 			//primaryStage.setMaximized(true);
 			primaryStage.show();
 		} catch(Exception e) {

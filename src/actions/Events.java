@@ -7,7 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.Alert.AlertType;
 
 public class Events {
-	
+
 	// Metodo montar data log
 	public static void logEvento(String mensagem, TextArea painel) {
 		String dataHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
@@ -18,13 +18,14 @@ public class Events {
 	public static void log(String mensagem, TextArea painel) {
 		painel.appendText(mensagem + "\n");
 	}
-	
+
 	// Metodo montar data log
 	public static void logEvento2(String mensagem, TextArea painel) {
-		//String dataHora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
-		painel.appendText( mensagem + "\n" + "\n");
+		// String dataHora =
+		// LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy
+		// HH:mm:ss"));
+		painel.appendText(mensagem + "\n" + "\n");
 	}
-	
 
 	public static void alertSenha() {
 
@@ -55,13 +56,14 @@ public class Events {
 		Alerts.showAlert("  Aguarde - Buscando Locais...", "", " Pesquisa finalizada. ", AlertType.WARNING);
 
 	}
-	
+
 	public static void alertCobtadorReset() {
 
-		Alerts.showAlert("  Aguarde - Buscando pessoas no Local...", "", " Niveis e Anti Passback inicializados!!! ", AlertType.WARNING);
+		Alerts.showAlert("  Aguarde - Buscando pessoas no Local...", "", " Niveis e Anti Passback inicializados!!! ",
+				AlertType.WARNING);
 
 	}
-	
+
 	public static void alertPessoasPresente() {
 
 		Alerts.showAlert("  Aguarde - Buscando pessoas no Local...", "", " Pesquisa finalizada!!! ", AlertType.WARNING);

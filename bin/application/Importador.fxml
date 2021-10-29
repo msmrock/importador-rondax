@@ -14,7 +14,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Program">
    <left>
-      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1261.0" style="-fx-background-color: #FFFFFF;" translateZ="-1.0" BorderPane.alignment="TOP_CENTER">
+      <AnchorPane maxHeight="655.0" maxWidth="1261.0" minHeight="655.0" minWidth="1261.0" prefHeight="655.0" prefWidth="1261.0" style="-fx-background-color: #FFFFFF;" translateZ="-1.0" BorderPane.alignment="TOP_CENTER">
          <children>
             <Label layoutX="416.0" layoutY="-1.0" text="Importador de pessoas - Ronda Senior X">
                <font>
@@ -52,7 +52,7 @@
                </image>
             </ImageView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="8.0" layoutX="38.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="1199.0" />
-            <Button fx:id="btEntrar" layoutX="427.0" layoutY="39.0" mnemonicParsing="false" onAction="#EntrarAutentica" text="Autenticar" underline="true">
+            <Button fx:id="btEntrar" layoutX="427.0" layoutY="39.0" mnemonicParsing="false" onAction="#EntrarAutenticar" text="Autenticar" underline="true">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
@@ -62,83 +62,15 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="78.0" layoutX="3.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73a16f" height="3.0" layoutX="1204.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="456.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="241.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="705.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="241.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="8.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
-                              <Button fx:id="btConPessoasAll" layoutX="19.0" layoutY="12.0" mnemonicParsing="false" onAction="#btBuscaPessoasAll2" prefHeight="25.0" prefWidth="64.0" text="Pessoas">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btConPessoasTermo" layoutX="713.0" layoutY="44.0" mnemonicParsing="false" onAction="#btBuscaPessoasAllcomTermo" prefHeight="25.0" prefWidth="226.0" text="Buscar Pessoas">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btConTodosPapeis" layoutX="92.0" layoutY="12.0" mnemonicParsing="false" onAction="#verificarPapeis" prefHeight="25.0" prefWidth="64.0" text="Papeis">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btConPessoasNoPapel" layoutX="582.0" layoutY="44.0" mnemonicParsing="false" onAction="#verificarPessoasNoPapel" prefHeight="25.0" prefWidth="101.0" text="Papeis - Geral">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btConTodosGrupos" layoutX="165.0" layoutY="12.0" mnemonicParsing="false" onAction="#verificarGrupos" prefHeight="25.0" prefWidth="64.0" text="Grupos">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btDocumentos" layoutX="313.0" layoutY="12.0" mnemonicParsing="false" onAction="#verificarDocs" prefHeight="25.0" prefWidth="133.0" text="Documentos">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
                               <TextArea fx:id="txtConsulta" layoutY="81.0" prefHeight="443.0" prefWidth="1250.0" style="-fx-background-color: #73a16f;">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></TextArea>
-                              <TextField fx:id="txtTermoPapel" layoutX="465.0" layoutY="12.0" prefHeight="25.0" prefWidth="219.0" promptText="INSIRA O ID DO PAPEL">
-                                 <font>
-                                    <Font name="System Italic" size="12.0" />
-                                 </font></TextField>
-                              <TextField fx:id="txtTermoPessoa" layoutX="713.0" layoutY="12.0" prefHeight="25.0" prefWidth="224.0" promptText="ex. ana OU ana+a OU documento">
-                                 <font>
-                                    <Font name="System Italic" size="12.0" />
-                                 </font></TextField>
-                              <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="1199.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/pesquisar1.png" />
-                                 </image>
-                              </ImageView>
-                              <Button fx:id="btConPessoasNoPapel1" layoutX="465.0" layoutY="44.0" mnemonicParsing="false" onAction="#verificarPapelPessoas" prefHeight="25.0" prefWidth="110.0" text="Papeis- Ativos">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btProprietaria" alignment="CENTER" layoutX="16.0" layoutY="44.0" mnemonicParsing="false" onAction="#verificaTenant" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF;" text="Proprietaria em uso" textFill="#ee0404" underline="true">
-                                 <font>
-                                    <Font name="System Bold Italic" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Hyperlink fx:id="hpSobre" layoutX="1198.0" layoutY="47.0" onAction="#alertSobre" prefHeight="23.0" prefWidth="47.0" text="Sobre">
-                                 <font>
-                                    <Font name="System Bold Italic" size="12.0" />
-                                 </font>
-                              </Hyperlink>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="71.0" layoutX="953.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="241.0" />
-                              <TextField fx:id="txtPessoaPresente" layoutX="965.0" layoutY="12.0" prefHeight="25.0" prefWidth="218.0" promptText="INSIRA O ID DO LOCAL">
-                                 <font>
-                                    <Font name="System Italic" size="12.0" />
-                                 </font>
-                              </TextField>
-                              <Button fx:id="btPessoasPresente" layoutX="964.0" layoutY="43.0" mnemonicParsing="false" onAction="#verificarPessoasPresente" prefHeight="25.0" prefWidth="220.0" text="Pessoas presente no local ">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btLocais" layoutX="239.0" layoutY="12.0" mnemonicParsing="false" onAction="#verificaLocais" prefHeight="25.0" prefWidth="64.0" text="Locais">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="58.0" layoutX="5.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
+                              <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#BuscaPessoas" text="Pessoas" />
+                              <Button layoutX="111.0" layoutY="13.0" mnemonicParsing="false" onAction="#BuscarPapeis" text="Papeis" />
+                              <Button layoutX="197.0" layoutY="13.0" mnemonicParsing="false" text="Grupos" />
+                              <Button layoutX="290.0" layoutY="13.0" mnemonicParsing="false" text="Locais" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -148,31 +80,10 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="40.0" layoutX="5.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
-                              <Button fx:id="btImpGrupo" layoutX="114.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoGrupo" text="Importar Grupo">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btImpEscala" layoutX="225.0" layoutY="8.0" mnemonicParsing="false" onAction="#alertEmConstrução" text="Importar Escala">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btImpPapel" layoutX="9.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoPapel" text="Importar Papel">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
                               <TextArea fx:id="txtImportarEstrutura" layoutY="39.0" prefHeight="487.0" prefWidth="1250.0">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></TextArea>
-                              <Button fx:id="btLimparTelaEstrutura" layoutX="1154.0" layoutY="8.0" mnemonicParsing="false" onAction="#btAlimpaTelaEstrutura" prefHeight="25.0" prefWidth="85.0" text="Limpar Tela" textFill="RED">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btImpEscalaNoPapel" layoutX="333.0" layoutY="8.0" mnemonicParsing="false" onAction="#alertEmConstrução" text="Inserir Escala no Papel">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
                            </children>
                         </AnchorPane>
                   </content>
@@ -182,29 +93,10 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="471.0" prefWidth="896.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="40.0" layoutX="5.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
-                              <Button fx:id="btImpPessoas" layoutX="15.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoPessoas" text="Importar Pessoas">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
                               <TextArea fx:id="txtImportar" layoutY="39.0" prefHeight="487.0" prefWidth="1251.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font></TextArea>
-                              <Button fx:id="btLimparTela" layoutX="1155.0" layoutY="8.0" mnemonicParsing="false" onAction="#btAlimpaTela" prefHeight="25.0" prefWidth="85.0" text="Limpar Tela" textFill="RED">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btLayout" alignment="CENTER" layoutX="141.0" layoutY="7.0" mnemonicParsing="false" onAction="#btAbrirLayout" prefHeight="27.0" prefWidth="129.0" style="-fx-background-color: #FFFFF0; -fx-border-color: #ffffffff;" text="Ajuda Importação" textFill="#ee0404" underline="true">
-                                 <font>
-                                    <Font name="System Bold Italic" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btLayoutPasta" alignment="CENTER" layoutX="277.0" layoutY="7.0" mnemonicParsing="false" onAction="#btAbrirLayoutPasta" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #FFFFF0; -fx-border-color: #ffffffff;" text="Exemplos de layouts" textFill="#ee0404" underline="true">
-                                 <font>
-                                    <Font name="System Bold Italic" size="12.0" />
-                                 </font>
-                              </Button>
                            </children>
                         </AnchorPane>
                   </content>
@@ -218,23 +110,6 @@
                                  <font>
                                     <Font size="14.0" />
                                  </font></TextArea>
-                              <Button fx:id="btVinGrupo" layoutX="218.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoGrupoPessoas" text="Vincular Gupo">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btVinCracha" layoutX="110.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoCrachaPessoas" text="Vincular Crachá">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btVinPapel" layoutX="9.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoPapelPessoas" text="Vincular Papel">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btLimparVinculo" layoutX="1157.0" layoutY="8.0" mnemonicParsing="false" onAction="#btAlimpaTelaVinculo" prefHeight="25.0" prefWidth="85.0" text="Limpar Tela" textFill="RED">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
                            </children>
                         </AnchorPane>
                     </content>
@@ -248,10 +123,6 @@
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></TextArea>
-                              <Button fx:id="btVinPis" layoutX="10.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoImportarPisPessoa" text="Inserir Documento">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
                            </children>
                         </AnchorPane>
                     </content>
@@ -261,41 +132,10 @@
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#575757" height="66.0" layoutX="6.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1243.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutX="457.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutX="608.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
                               <TextArea fx:id="txtHsitorico" layoutY="67.0" prefHeight="459.0" prefWidth="1249.0">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></TextArea>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="63.0" layoutX="10.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
-                              <Button fx:id="btSelecionarHsitoricoPapel" layoutX="612.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoAtualizaPapel" text="Alterar Data Papel">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btSelecionarHsitoricoInativarPessoa" layoutX="460.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoInativarPessoa" text="Finaliza papel e crachá" textFill="RED" underline="true">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btResetGeralNivel" layoutX="17.0" layoutY="36.0" mnemonicParsing="false" onAction="#resetNivelGeral" prefHeight="25.0" prefWidth="239.0" text="Reset - Nivel e AntiPassaback - (GERAL)">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btResetNivelPessoaID" layoutX="264.0" layoutY="36.0" mnemonicParsing="false" onAction="#resetNivelPessoa" prefHeight="25.0" prefWidth="183.0" text="Reset - Nivel e AntiPassaback ">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
-                              <TextField fx:id="txtPessoaNivel" layoutX="264.0" layoutY="8.0" prefHeight="25.0" prefWidth="183.0" promptText="INSIRA O ID DA PESSOA">
-                                 <font>
-                                    <Font name="System Italic" size="12.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtPessoaGeral" layoutX="17.0" layoutY="8.0" prefHeight="25.0" prefWidth="239.0" promptText="INSIRA O ID DO LOCAL">
-                                 <font>
-                                    <Font name="System Italic" size="12.0" />
-                                 </font>
-                              </TextField>
                            </children>
                         </AnchorPane>
                     </content>
@@ -309,27 +149,12 @@
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font></TextArea>
-                              <Button fx:id="btEcluirPessoa" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoExlcuirPessoa" text="Exluir Pessoa" textFill="#f50303">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font></Button>
-                              <Button fx:id="btEcluirPessoaGrupo" layoutX="111.0" layoutY="8.0" mnemonicParsing="false" onAction="#selecionaArquivoExcluirPessoasgrupo" text="Excluir Pessoa do Gupo ID" textFill="#f50303">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Button>
                            </children>
                         </AnchorPane>
                     </content>
                   </Tab>
               </tabs>
             </TabPane>
-            <Button fx:id="btLogout" disable="true" layoutX="1189.0" layoutY="4.0" mnemonicParsing="false" onAction="#btSairLogout" prefHeight="25.0" prefWidth="125.0" text="Logout" visible="false">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Button>
-            <Hyperlink fx:id="linkPlataforma" layoutX="759.0" layoutY="21.0" onAction="#btAbrirLinkPla" text="Plataforma Ronda Senior X" />
-            <Hyperlink fx:id="linkSuporte" layoutX="794.0" layoutY="40.0" onAction="#btAbrirLinkSuporte" text="Suporte 0800 Senior" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc116" height="4.0" layoutX="3.0" layoutY="18.0" stroke="TRANSPARENT" strokeType="INSIDE" width="990.0" />
          </children>
          <BorderPane.margin>
