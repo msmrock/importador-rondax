@@ -1,0 +1,79 @@
+﻿                                                       Exemplos dos arquivos de importação.
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Importar pessoas.
+
+Pedro Alves Cabral;1;true;85399999999;1;30/03/1971;163;Av Amazonas,3333;Vila Dirce;Barueri;SP;0;Brasileiro;0;0;true;pedroCabral@brasil.com.br;0;55;true;11 3251-8888;9595
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Vicular papel da pessoa.
+1535;1;01/09/2020;31/12/2050
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Vincular crachá.
+
+1535;Adilson Luis de Araújo;13/03/2020;01/01/2040;2;998787177 
+>>>>>>>>>>>>>>>>>>>>
+
+
+
+Arquivo Vincular grupo. 
+
+1535;3
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Ecluir pessoa.
+
+1535
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Inativar pessoa.
+
+1535
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Excluir pessoa do grupo.
+
+1535;3
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Atualizar papel pessoa.
+
+1;1404;1535;2020-08-31T21:00:00-03:00;2021-10-22T10:00:00-03:00
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Importar estrutura papel.
+
+Novo Papel Teste;false;false;true;false;1;2;0;0;0;0;0;0;0;0;0;0;0;0
+
+
+
+>>>>>>>>>>>>>>>>>>>>
+Arquivo Importar estrutura grupo.
+
+NOVO GRUPO TESTE;38
+
+
+
+
+
+
+
+
+
+
